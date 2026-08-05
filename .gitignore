@@ -22,5 +22,3 @@ frontend/coverage/
 Thumbs.db
 *.log
 
-# Claude Code local session state
-.claude/
