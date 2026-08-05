@@ -1,0 +1,26 @@
+# Backend (Maven / Spring Boot)
+backend/target/
+backend/.mvn/wrapper/*.jar
+
+# Frontend (Next.js)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+frontend/coverage/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Claude Code local session state
+.claude/

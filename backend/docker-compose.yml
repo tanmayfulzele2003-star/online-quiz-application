@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: quiz_app_db
+      POSTGRES_USER: quiz_app
+      POSTGRES_PASSWORD: quiz_app
+    ports:
+      # Host port 5433 avoids clashing with a native Postgres install on 5432.
+      - "5433:5432"
+    volumes:
+      - quiz_app_pgdata:/var/lib/postgresql/data
+
+volumes:
+  quiz_app_pgdata:
